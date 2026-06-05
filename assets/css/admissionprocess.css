@@ -1,0 +1,107 @@
+.admission-text-section{
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #ffffff, #f7f9fc);
+}
+
+/* ================= TITLE ================= */
+.section-header{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2{
+  font-size: 36px;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* underline effect */
+.section-header h2::after{
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #A92209;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.section-header p{
+  color: #666;
+  max-width: 700px;
+  margin: auto;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ================= CONTENT BOX ================= */
+.content-box{
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  border: 1px solid #f0f0f0;
+}
+
+/* ================= HEADINGS ================= */
+.content-box h3{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #A92209;
+  font-size: 18px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+/* ICON */
+.icon{
+  font-size: 22px;
+  color: #A92209;
+}
+
+/* ================= TEXT ================= */
+.content-box p{
+  color: #444;
+  line-height: 1.9;
+  font-size: 15px;
+  margin-left: 34px;
+}
+
+/* ================= HOVER EFFECT (OPTIONAL POLISH) ================= */
+.content-box h3:hover{
+  transform: translateX(5px);
+  transition: 0.3s;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px){
+  .section-header h2{
+    font-size: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px){
+  .admission-text-section{
+    padding: 60px 15px;
+  }
+
+  .content-box{
+    padding: 20px;
+  }
+
+  .section-header h2{
+    font-size: 24px;
+  }
+
+  .content-box p{
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,117 @@
+.scholarship-section{
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #fff, #f7f9fc);
+}
+
+/* TITLE */
+.section-header{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.section-header h2{
+  font-size:34px;
+  color:#111;
+}
+
+.section-header p{
+  max-width:700px;
+  margin:auto;
+  color:#666;
+  line-height:1.7;
+}
+
+/* NOTE */
+.note-box{
+  background:#A92209;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:10px;
+  text-align:center;
+  margin:20px 0;
+  font-size:14px;
+}
+
+/* DOWNLOAD */
+.download-box{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.download-box a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#111;
+  color:#fff;
+  padding:10px 16px;
+  border-radius:25px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.download-box a:hover{
+  background:#A92209;
+}
+
+/* LIST */
+.scholarship-list{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+/* ITEM */
+.scholar-item{
+  background:#fff;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  transition:0.3s;
+}
+
+.scholar-item:hover{
+  transform:translateY(-5px);
+}
+
+/* ICON */
+.icon{
+  color:#A92209;
+  font-size:28px;
+}
+
+/* TEXT */
+.scholar-item h4{
+  margin:0;
+  font-size:16px;
+  color:#111;
+}
+
+.scholar-item p{
+  margin:3px 0 0;
+  font-size:13px;
+  color:#666;
+  line-height:1.5;
+}
+
+/* FOOT NOTE */
+.footer-note{
+  text-align:center;
+  margin-top:25px;
+  font-size:13px;
+  color:#777;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .scholarship-list{
+    grid-template-columns:1fr;
+  }
+
+  .section-header h2{
+    font-size:24px;
+  }
+}

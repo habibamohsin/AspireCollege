@@ -1,0 +1,134 @@
+/* =========================
+BACHELOR PROGRAM LAYOUT
+========================= */
+
+.course-layout{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  padding: 30px;
+  align-items: start;
+}
+
+/* =========================
+MAIN CONTENT BOX
+========================= */
+
+.course-content{
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.10);
+  transition: all 0.4s ease;
+  padding: 20px;
+}
+
+.course-content:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.course-img img{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.6s ease;
+}
+
+.course-content:hover .course-img img{
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.course-content h2{
+  color: #A92209;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.course-content p{
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* =========================
+SIDE INFO BOX
+========================= */
+
+.course-info .info-box{
+  background: #A92209;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.course-info .info-box:hover{
+  transform: translateY(-6px);
+}
+
+/* TITLE */
+.course-info .info-box h3{
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+/* INFO ROWS */
+.info-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  font-size: 14px;
+}
+
+.info-item span{
+  opacity: 0.9;
+}
+
+.info-item b{
+  font-weight: 600;
+}
+
+/* BUTTON */
+.apply-btn{
+  display: inline-block;
+  margin-top: 18px;
+  background: white;
+  color: #A92209;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.apply-btn:hover{
+  background: #A92209;
+  color: white;
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 992px){
+  .course-layout{
+    grid-template-columns: 1fr;
+  }
+
+  .course-img img{
+    height: 220px;
+  }
+}

@@ -1,0 +1,135 @@
+/* =========================
+   SECTION BACKGROUND
+========================= */
+.course-details{
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f8fafc, #ffffff);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.course-layout{
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* =========================
+   MAIN CONTENT CARD
+========================= */
+.course-content{
+  flex: 2;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+.course-img img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.course-content h2{
+  font-size: 26px;
+  font-weight: 800;
+  color: #A92209;
+  margin-bottom: 15px;
+}
+
+.course-content p{
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   INFO BOX (SIDE)
+========================= */
+.course-info{
+  flex: 1;
+}
+
+.info-box{
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-top: 4px solid #A92209;
+  position: sticky;
+  top: 20px;
+}
+
+.info-box h3{
+  margin-bottom: 20px;
+  color: #A92209;
+  font-size: 18px;
+}
+
+.info-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.info-item b{
+  color: #333;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.apply-btn{
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  padding: 12px;
+  background: #A92209;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.apply-btn:hover{
+  background: #7a1705;
+  transform: translateY(-3px);
+}
+
+/*RESPONSIVE*/
+@media (max-width: 992px){
+  .course-layout{
+    flex-direction: column;
+  }
+
+  .course-img img{
+    height: 280px;
+  }
+
+  .info-box{
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px){
+  .course-content h2{
+    font-size: 22px;
+  }
+
+  .course-img img{
+    height: 220px;
+  }
+
+  .info-item{
+    font-size: 13px;
+  }
+}
