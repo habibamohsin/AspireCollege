@@ -350,13 +350,8 @@ h6 {
 
 .page-title nav {
   background-color: var(--accent-color);
+  background-color: color-mix(in srgb, var(--accent-color) 90%, black 5%);
   padding: 20px 0;
-}
-
-@supports (background-color: color-mix(in srgb, var(--accent-color) 90%, black 5%)) {
-  .page-title nav {
-    background-color: color-mix(in srgb, var(--accent-color) 90%, black 5%);
-  }
 }
 
 .page-title nav a {
@@ -380,8 +375,7 @@ h6 {
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: var(--default-color);
-  opacity: 0.3;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
 /*--------------------------------------------------------------
@@ -421,7 +415,7 @@ section,
   margin-left: 12px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(227, 151, 12, 0.5);
+  color: color-mix(in srgb, rgb(227, 151, 12), transparent 50%);
   position: relative;
 }
 
